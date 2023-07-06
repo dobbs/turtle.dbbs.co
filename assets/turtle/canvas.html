@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<title>turtleCanvas</title>
+<script type="module">
+ import {Turtle, TurtleCanvas} from './canvas.js'
+ customElements.define('turtle-canvas', TurtleCanvas);
+ window.Turtle = Turtle;
+ window.TurtleCanvas = TurtleCanvas;
+ window.addEventListener('DOMContentLoaded', event => {
+   window.t = document.querySelector('turtle-canvas');
+   console.log(`
+    //examples:
+    t.move().draw()
+    t.turn().move().draw()
+    t.clear().draw()
+    t.move().turn().nextMovesize().move().turn().nextMovesize().draw()
+   `);
+ });
+</script>
+<style>
+ body { max-width: 300px; }
+</style>
+<turtle-canvas></turtle-canvas>

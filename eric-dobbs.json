@@ -1,0 +1,74 @@
+{
+  "title": "Eric Dobbs",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "a38b14f818f51656",
+      "text": "Turtle graphics enthusiast and systems adventurer."
+    },
+    {
+      "type": "roster",
+      "id": "392fa17241cd8ba9",
+      "text": "ROSTER wiki.dbbs.co/eric-dobbs"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Eric Dobbs",
+        "story": []
+      },
+      "date": 1585017891055
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a38b14f818f51656"
+      },
+      "id": "a38b14f818f51656",
+      "type": "add",
+      "date": 1585017892788
+    },
+    {
+      "type": "edit",
+      "id": "a38b14f818f51656",
+      "item": {
+        "type": "paragraph",
+        "id": "a38b14f818f51656",
+        "text": "Turtle graphics enthusiast and systems adventurer."
+      },
+      "date": 1585017911196
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "392fa17241cd8ba9"
+      },
+      "id": "392fa17241cd8ba9",
+      "type": "add",
+      "after": "a38b14f818f51656",
+      "date": 1585017915107
+    },
+    {
+      "type": "edit",
+      "id": "392fa17241cd8ba9",
+      "item": {
+        "type": "roster",
+        "id": "392fa17241cd8ba9",
+        "text": "ROSTER localtest.me/eric-dobbs"
+      },
+      "date": 1585017932871
+    },
+    {
+      "type": "edit",
+      "id": "392fa17241cd8ba9",
+      "item": {
+        "type": "roster",
+        "id": "392fa17241cd8ba9",
+        "text": "ROSTER wiki.dbbs.co/eric-dobbs"
+      },
+      "date": 1585017968146
+    }
+  ]
+}

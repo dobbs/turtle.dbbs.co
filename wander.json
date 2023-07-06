@@ -1,0 +1,652 @@
+{
+  "title": "Wander",
+  "story": [
+    {
+      "type": "turtle-wander",
+      "id": "c819cb49065d3013"
+    },
+    {
+      "type": "turtle",
+      "id": "e40bf72b365e43bd",
+      "history": [
+        {
+          "fn": "clear",
+          "beforestate": {},
+          "state": {
+            "name": "origin",
+            "x": 0,
+            "y": 0,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 0,
+            "y": 0,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 0,
+            "y": 0,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 0,
+            "y": 0,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 25.980762113533153,
+            "y": -15.000000000000014,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 25.980762113533153,
+            "y": -15.000000000000014,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 25.980762113533153,
+            "y": -15.000000000000014,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "nextMovesize",
+          "beforestate": {
+            "name": "origin",
+            "x": 25.980762113533153,
+            "y": -15.000000000000014,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 25.980762113533153,
+            "y": -15.000000000000014,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 35,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 25.980762113533153,
+            "y": -15.000000000000014,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 35,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 56.29165124598852,
+            "y": 2.499999999999968,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 35,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        }
+      ]
+    },
+    {
+      "type": "turtle",
+      "id": "aff2630a8bad9fb5",
+      "text": "Turtle wants to be here",
+      "history": [
+        {
+          "fn": "clear",
+          "beforestate": {},
+          "state": {
+            "name": "origin",
+            "x": 0,
+            "y": 0,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 0,
+            "y": 0,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 1.83697019872103e-15,
+            "y": -30,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 1.83697019872103e-15,
+            "y": -30,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 1.83697019872103e-15,
+            "y": -30,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 1.83697019872103e-15,
+            "y": -30,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 25.980762113533157,
+            "y": -45.000000000000014,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 25.980762113533157,
+            "y": -45.000000000000014,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 25.980762113533157,
+            "y": -45.000000000000014,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        }
+      ]
+    },
+    {
+      "type": "turtle",
+      "id": "527cb0848f339e6b",
+      "text": "Turtle wants to be here",
+      "history": [
+        {
+          "fn": "clear",
+          "beforestate": {},
+          "state": {
+            "name": "origin",
+            "x": 0,
+            "y": 0,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 0,
+            "y": 0,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 1.83697019872103e-15,
+            "y": -30,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 1.83697019872103e-15,
+            "y": -30,
+            "direction": -1.5707963267948966,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 1.83697019872103e-15,
+            "y": -30,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 1.83697019872103e-15,
+            "y": -30,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 25.980762113533157,
+            "y": -45.000000000000014,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 25.980762113533157,
+            "y": -45.000000000000014,
+            "direction": 5.759586531581287,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 25.980762113533157,
+            "y": -45.000000000000014,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 25.980762113533157,
+            "y": -45.000000000000014,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 51.96152422706632,
+            "y": -30.00000000000003,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 51.96152422706632,
+            "y": -30.00000000000003,
+            "direction": 0.5235987755982983,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 51.96152422706632,
+            "y": -30.00000000000003,
+            "direction": 1.570796326794896,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 51.96152422706632,
+            "y": -30.00000000000003,
+            "direction": 1.570796326794896,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 51.96152422706634,
+            "y": -2.842170943040401e-14,
+            "direction": 1.570796326794896,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 51.96152422706634,
+            "y": -2.842170943040401e-14,
+            "direction": 1.570796326794896,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 51.96152422706634,
+            "y": -2.842170943040401e-14,
+            "direction": 2.6179938779914935,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 51.96152422706634,
+            "y": -2.842170943040401e-14,
+            "direction": 2.6179938779914935,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 25.980762113533192,
+            "y": 14.999999999999991,
+            "direction": 2.6179938779914935,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 25.980762113533192,
+            "y": 14.999999999999991,
+            "direction": 2.6179938779914935,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 25.980762113533192,
+            "y": 14.999999999999991,
+            "direction": 3.6651914291880914,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "move",
+          "beforestate": {
+            "name": "origin",
+            "x": 25.980762113533192,
+            "y": 14.999999999999991,
+            "direction": 3.6651914291880914,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 2.1316282072803006e-14,
+            "y": 8.881784197001252e-15,
+            "direction": 3.6651914291880914,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        },
+        {
+          "fn": "turn",
+          "beforestate": {
+            "name": "origin",
+            "x": 2.1316282072803006e-14,
+            "y": 8.881784197001252e-15,
+            "direction": 3.6651914291880914,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          },
+          "state": {
+            "name": "origin",
+            "x": 2.1316282072803006e-14,
+            "y": 8.881784197001252e-15,
+            "direction": 4.712388980384689,
+            "pensize": 1,
+            "pencolor": "black",
+            "movesize": 30,
+            "turnsize": 1.0471975511965976,
+            "turnsizeNumerator": 1,
+            "turnsizeDenominator": 6
+          }
+        }
+      ]
+    }
+  ],
+  "dynamic": true,
+  "journal": [
+    {
+      "type": "fork",
+      "site": "localhost:8000",
+      "date": 1585763897861
+    }
+  ]
+}

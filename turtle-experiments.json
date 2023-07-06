@@ -1,0 +1,94 @@
+{
+  "title": "Turtle Experiments",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "f3dbe866786234cf",
+      "text": "We finally connect turtle geometry to wiki."
+    },
+    {
+      "type": "paragraph",
+      "id": "0f1624b6bf393c1a",
+      "text": "[[First Dancing Turtle]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Turtle Experiments",
+        "story": []
+      },
+      "date": 1585018014770
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f3dbe866786234cf"
+      },
+      "id": "f3dbe866786234cf",
+      "type": "add",
+      "date": 1585018025584
+    },
+    {
+      "type": "edit",
+      "id": "f3dbe866786234cf",
+      "item": {
+        "type": "paragraph",
+        "id": "f3dbe866786234cf",
+        "text": "[[Turtle]]"
+      },
+      "date": 1585026456064
+    },
+    {
+      "type": "fork",
+      "date": 1688389724185
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0b16096e89548e64"
+      },
+      "id": "0b16096e89548e64",
+      "type": "add",
+      "after": "f3dbe866786234cf",
+      "date": 1688389733364
+    },
+    {
+      "type": "edit",
+      "id": "0b16096e89548e64",
+      "item": {
+        "type": "assets",
+        "id": "0b16096e89548e64",
+        "text": "turtle"
+      },
+      "date": 1688389774241
+    },
+    {
+      "type": "edit",
+      "id": "f3dbe866786234cf",
+      "item": {
+        "type": "paragraph",
+        "id": "f3dbe866786234cf",
+        "text": "We finally connect turtle geometry to wiki."
+      },
+      "date": 1688603351141
+    },
+    {
+      "type": "add",
+      "id": "0f1624b6bf393c1a",
+      "item": {
+        "type": "paragraph",
+        "id": "0f1624b6bf393c1a",
+        "text": "[[First Dancing Turtle]]"
+      },
+      "after": "f3dbe866786234cf",
+      "date": 1688603378129
+    },
+    {
+      "type": "remove",
+      "id": "0b16096e89548e64",
+      "date": 1688604276744
+    }
+  ]
+}

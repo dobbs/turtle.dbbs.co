@@ -1,0 +1,76 @@
+<!doctype html>
+<title>turtle poetry</title>
+<body><svg viewBox="-100 -100 200 200"><path id="it" d="" fill="none" stroke="black"/></svg></body>
+<script type="module">
+ import {addTurtle} from "./svg-path.js"
+ import * as frame from "./frame.js"
+ function helloWorld(el) {
+   Array.from({length:16*3}).forEach(() => {
+     el.turtle.move().turn().nextMovesize()
+   })
+   el.turtle.draw()
+   rescale(el.closest('svg'))
+ }
+ function rescale (svg) {
+   let {x,y,width,height} = svg.getBBox()
+   let padding = Math.min(width,height)*0.01
+   svg.setAttribute('viewBox',
+                    `${x-padding} ${y-padding} ${width+2*padding} ${height+2*padding}`)
+   svg.removeAttribute("width")
+   svg.removeAttribute("height")
+   svg.style.width="100%"
+   return svg
+ }
+ function* actions(prose) {
+   const re = /move|turn/g // TODO synonyms?
+   for (let [action] of prose.matchAll(re)) {
+     if (action == "move") {
+       for (let i=0; i<15; i++) {
+         yield (turtle => turtle.move().draw())
+       }
+     } else if (action == "turn") {
+       yield (turtle => turtle.turn().move().draw())
+     }
+   }
+ }
+ function animate(el, prose) {
+   const fps = 30
+   let requestId
+   let iterator = (function* () {
+     while (true) {
+       yield (turtle => turtle.clear().draw())
+       for (let i=0; i < 6; i++) {
+         yield* actions(prose)
+       }
+     }
+   })()
+   function step() {
+     setTimeout(function () {
+       requestId = window.requestAnimationFrame(step)
+       let what = iterator.next()
+       what.value(el.turtle)
+       rescale(el.closest('svg'))
+       resize()
+     }, 1000/fps) // setTimeout used to allow speed to be controlled with fps
+   }
+   step()
+ }
+ function resize() {
+   window.parent.postMessage({
+     action: "resize",
+     height: document.body.offsetHeight
+   }, "*")
+ }
+ async function main() {
+   const {page:{story}} = await frame.context()
+   const text = story
+     .filter(item => item.type == "paragraph")
+     .map(item => item.text.toLowerCase())
+     .join("\n")
+   addTurtle(it)
+   helloWorld(it)
+   animate(it, text)
+   document.body.insertAdjacentHTML('afterbegin', `<p>${text}</p>`)
+ }
+ main()
+</script>

@@ -14,7 +14,7 @@
     {
       "type": "frame",
       "id": "4a91d34f9f7765a5",
-      "text": "http://turtle.localhost/assets/turtle/poetic-poc.html"
+      "text": "http://turtle.dbbs.co/assets/turtle/poetic-poc.html"
     },
     {
       "type": "video",
@@ -374,6 +374,16 @@
         "82c6e7f76aa3989e"
       ],
       "date": 1688604032413
+    },
+    {
+      "type": "edit",
+      "id": "4a91d34f9f7765a5",
+      "item": {
+        "type": "frame",
+        "id": "4a91d34f9f7765a5",
+        "text": "http://turtle.dbbs.co/assets/turtle/poetic-poc.html"
+      },
+      "date": 1688624100845
     }
   ]
 }

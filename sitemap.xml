@@ -5,8 +5,20 @@
     <lastmod>2020-03-24</lastmod>
   </url>
   <url>
-    <loc>http://turtle.localhost/turtle-experiments.html</loc>
+    <loc>http://turtle.localhost/esm-snippet-template.html</loc>
+    <lastmod>2023-07-07</lastmod>
+  </url>
+  <url>
+    <loc>http://turtle.localhost/first-dancing-turtle.html</loc>
     <lastmod>2023-07-06</lastmod>
+  </url>
+  <url>
+    <loc>http://turtle.localhost/tortoise-explains-the-dance.html</loc>
+    <lastmod>2023-07-11</lastmod>
+  </url>
+  <url>
+    <loc>http://turtle.localhost/turtle-experiments.html</loc>
+    <lastmod>2023-07-08</lastmod>
   </url>
   <url>
     <loc>http://turtle.localhost/wander.html</loc>
@@ -14,9 +26,5 @@
   <url>
     <loc>http://turtle.localhost/welcome-visitors.html</loc>
     <lastmod>2020-03-24</lastmod>
-  </url>
-  <url>
-    <loc>http://turtle.localhost/first-dancing-turtle.html</loc>
-    <lastmod>2023-07-06</lastmod>
   </url>
 </urlset>

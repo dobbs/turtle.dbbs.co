@@ -10,6 +10,11 @@
       "type": "paragraph",
       "id": "0f1624b6bf393c1a",
       "text": "[[First Dancing Turtle]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "581e0beabbb280ef",
+      "text": "[[Tortoise Explains the Dance]]"
     }
   ],
   "journal": [
@@ -89,6 +94,27 @@
       "type": "remove",
       "id": "0b16096e89548e64",
       "date": 1688604276744
+    },
+    {
+      "type": "add",
+      "id": "581e0beabbb280ef",
+      "item": {
+        "type": "paragraph",
+        "id": "581e0beabbb280ef",
+        "text": "[[Tortise Explains the Dance]]"
+      },
+      "after": "0f1624b6bf393c1a",
+      "date": 1688740512461
+    },
+    {
+      "type": "edit",
+      "id": "581e0beabbb280ef",
+      "item": {
+        "type": "paragraph",
+        "id": "581e0beabbb280ef",
+        "text": "[[Tortoise Explains the Dance]]"
+      },
+      "date": 1688824621009
     }
   ]
 }

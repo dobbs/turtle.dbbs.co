@@ -40,10 +40,26 @@ export class Turtle {
     return this;
   }
 
-  turn() {
+  change(name, params) {
+    let beforestate = this.moment;
+    let state = this._moment = {
+      ...beforestate,
+      ...params
+    };
+    this._history.push({
+      fn: name,
+      beforestate,
+      state
+    });
+    return this;
+  }
+
+  _changeDirection({positive=true}) {
     let beforestate = this.moment;
     let {direction, turnsize} = beforestate;
-    let newdirection = direction + turnsize;
+    let newdirection = (positive)
+        ? direction + turnsize
+        : direction - turnsize;
     while (newdirection > TAU) {
       newdirection = newdirection - TAU;
     }
@@ -51,87 +67,92 @@ export class Turtle {
       newdirection = newdirection + TAU;
     }
 
-    let state = this._moment = {
-      ...beforestate,
-      direction: newdirection
-    };
-    this._history.push({
-      fn: 'turn',
-      beforestate,
-      state
-    });
-    return this;
+    return this.change('turn', {direction: newdirection})
+  }
+
+  turn() {
+    return this._changeDirection({positive:true})
+  }
+
+  right() {
+    return this._changeDirection({positive:true})
+  }
+
+  left () {
+    return this._changeDirection({positive:false})
   }
 
   move() {
     let beforestate = this.moment;
     let {x, y, direction, movesize} = beforestate;
-    let state = this._moment = {
-      ...beforestate,
+    return this.change('move', {
       x: Math.cos(direction) * movesize + x,
       y: Math.sin(direction) * movesize + y
-    };
-    this._history.push({
-      fn: 'move',
-      beforestate,
-      state
-    });
-    return this;
+    })
   }
 
   nextMovesize() {
-    let beforestate = this.moment;
-    let movesize = this.options.movesize
-        .find(size => size > beforestate.movesize) ||
-        this.options.movesize[0];
-    let state = this._moment = {
-      ...beforestate,
-      movesize
-    }
-    this._history.push({
-      fn: 'nextMovesize',
-      beforestate,
-      state
-    });
-    return this;
+    let {movesize} = this.moment;
+    let {movesize: options} = this.options
+    let idx = options.indexOf(movesize)
+    movesize = options[idx+1] || options[0]
+    return this.change('nextMovesize', {movesize})
+  }
+
+  prevMovesize() {
+    let {movesize} = this.moment;
+    let {movesize: options} = this.options
+    let idx = options.indexOf(movesize)
+    movesize = options[idx-1] || options[options.length-1]
+    return this.change('prevMovesize', {movesize})
   }
 
   nextTurnsizeNumerator() {
-    let beforestate = this.moment;
-    let turnsizeNumerator = this.options.turnsizeNumerator
-        .find(n => n > beforestate.turnsizeNumerator) ||
-        this.options.turnsizeNumerator[0];
-    let turnsize = TAU * turnsizeNumerator / beforestate.turnsizeDenominator;
-    let state = this._moment = {
-      ...beforestate,
-      turnsize,
-      turnsizeNumerator
-    }
-    this._history.push({
-      fn: 'nextTurnsizeNumerator',
-      beforestate,
-      state
-    });
-    return this;
+    let {
+      turnsizeNumerator: numerator,
+      turnsizeDenominator: denominator
+    } = this.moment;
+    let {turnsizeNumerator: options} = this.options
+    let idx = options.indexOf(numerator)
+    let turnsizeNumerator = options[idx+1] || options[0]
+    let turnsize = TAU * turnsizeNumerator / denominator;
+    return this.change('nextTurnsizeNumerator', {turnsize, turnsizeNumerator})
   }
 
   nextTurnsizeDenominator() {
-    let beforestate = this.moment;
-    let turnsizeDenominator = this.options.turnsizeDenominator
-        .find(n => n > beforestate.turnsizeDenominator) ||
-        this.options.turnsizeDenominator[0];
-    let turnsize = TAU * beforestate.turnsizeNumerator / turnsizeDenominator;
-    let state = this._moment = {
-      ...beforestate,
-      turnsize,
-      turnsizeDenominator
-    }
-    this._history.push({
-      fn: 'nextTurnsizeDenominator',
-      beforestate,
-      state
-    });
-    return this;
+    let {
+      turnsizeNumerator: numerator,
+      turnsizeDenominator: denominator
+    } = this.moment;
+    let {turnsizeDenominator: options} = this.options
+    let idx = options.indexOf(denominator)
+    let turnsizeDenominator = options[idx+1] || options[0]
+    let turnsize = TAU * numerator / turnsizeDenominator;
+    return this.change('nextTurnsizeDenominator', {turnsize, turnsizeDenominator})
+  }
+
+  prevTurnsizeNumerator() {
+    let {
+      turnsizeNumerator: numerator,
+      turnsizeDenominator: denominator
+    } = this.moment;
+    let {turnsizeNumerator: options} = this.options
+    let idx = options.indexOf(numerator)
+    let turnsizeNumerator = options[idx-1] || options[options.length-1]
+    let turnsize = TAU * turnsizeNumerator / denominator;
+    return this.change('prevTurnsizeNumerator', {turnsize, turnsizeNumerator})
+  }
+
+  prevTurnsizeDenominator() {
+    let {
+      turnsizeNumerator: numerator,
+      turnsizeDenominator: denominator
+    } = this.moment;
+    let {turnsizeDenominator: options} = this.options
+    let idx = options.indexOf(denominator)
+    let turnsizeDenominator = options[idx-1] || options[options.length-1]
+    let turnsize = TAU * numerator / turnsizeDenominator;
+    return this.change('prevTurnsizeDenominator', {turnsize, turnsizeDenominator})
   }
 
   get boundingBox() {
